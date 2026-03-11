@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: auto;
+}
+
+.navbar {
+    background: #282828;
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.nav_left {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav_list li {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.nav_right {
+    gap: 25px;
+    display: flex;
+}
+
+.hero {
+    background: url(./img/Header\ \(1\).png) center/cover;
+}
+
+.hero_content {
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_content h1 {
+    margin-top: 204px;
+    margin-bottom: 38px;
+    font-family: Prosto One;
+    font-weight: 400;
+    font-size: 100px;
+    leading-trim: NONE;
+    line-height: 75px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.hero_content button {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background: white;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #171718;
+}
+
+.main {
+    background: #151515;
+}
+
+.sec1_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.one_right img {
+    width: 100%;
+}
+
+.one_left p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 33px;
+    color: white;
+}
+
+.sec2_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
+    gap: 80px;
+}
+
+.two_right {
+    display: flex;
+    align-items: center;
+}
+
+.two_right p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.sec3_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 13px;
+}
+
+.three_left p,
+.three_right p {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: white;
+}
+
+.three_right p {
+    text-align: left;
+}
+
+.three_center {
+    display: flex;
+    align-items: center;
+}
+
+.three_center::before {
+    content: "";
+    color: white;
+    background: #C4C4C4;
+    width: 60px;
+    height: 1px;
+}
+
+.three_center::after {
+    content: "";
+    color: white;
+    background: #C4C4C4;
+    width: 60px;
+    height: 1px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+h1:hover {
+    letter-spacing: 8px;
+}
+
+h1::before {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: white;
+    margin-bottom: 12px;
+}
+
+h1::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: white;
+    margin-top: 12px;
+    align-self: flex-end;
+}
+
+.sec4_content {
+    padding-top: 80px;
+    padding-bottom: 55px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card4 {
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card4 h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+
+.card4 p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card4 button {
+    width: 160px;
+    height: 34px;
+    background: #151515;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer {
+    background: #282828;
+}
+
+.footer_content {
+    height: 215px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.f_center {
+    display: flex;
+    justify-content: center;
+}
+
+.f_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .nav_content {
+        height: max-content;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_left img {
+        width: 80%;
+    }
+
+    .hero_content {
+        height: 555px;
+    }
+
+    .hero_content h1 {
+        margin-top: 120px;
+        margin-bottom: 26px;
+        font-size: 40px;
+    }
+
+    .sec1_content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .one_left p {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .sec2_content {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 0px;
+        gap: 30px;
+    }
+
+    .two_right p {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .two_left img {
+        width: 100%;
+    }
+
+    .sec3_content {
+        grid-template-columns: 1fr;
+    }
+
+    .three_left p,
+    .three_right p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .three_center::before {
+        display: none;
+    }
+
+    .three_center::after {
+        display: none;
+    }
+
+    .three_center {
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    h1::before {
+
+        margin-bottom: 0px;
+    }
+
+    h1::after {
+        margin-top: 0;
+    }
+
+    .sec4_content {
+        gap: 20px;
+        grid-template-columns: 280px;
+        justify-content: center;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
